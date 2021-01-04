@@ -3,7 +3,7 @@
 <p align="center">
 Layout usado como atividade para a matéria de Web Design no curso de Ciência da Computação.<br><br>
   <a href="#">
-    <img width="350" src="#">
+    <img width="500" src="https://raw.githubusercontent.com/carloseduribeiro/freehand-atividade-webdesign/main/hero-img.PNG">
   </a>
   <br>IFC - Videira.
 </p>
