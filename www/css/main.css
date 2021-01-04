@@ -1,0 +1,96 @@
+html {
+    font-size: 62.5%;   /* 1rem = 10px */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    /* Define o tamanho de fonte padrão: */
+    font-size: 1.6rem;
+}
+
+
+/*  ------------------------
+            CONTENT
+    ------------------------ */
+header, main, footer {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 1155px;
+    /* background-color: gray; */
+}
+
+
+/*  ------------------------
+            CABEÇALHO
+    ------------------------ */
+header div.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0px 38px 0px;
+
+    border-bottom: 1px solid #EFEEF3;
+}
+header div.content a {
+    color: #16133D;
+}
+
+/* LOGO */
+.logo a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.logo img {
+    margin: 0px 10px 0px 0px;
+}
+
+header div.content nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+header div.content nav ul {
+    display: flex;
+}
+header div.content nav ul li {
+    margin: 0px 0px 0px 50px;
+}
+header div.content nav ul li:first-child {
+    margin: 0px 0px 0px 0px;
+}
+header div.content nav ul li a {
+    font-weight: 500;
+}
+header div.content nav ul li a:hover {
+    color: #2b285f;
+}
+
+/* NAV Registro/Login */
+header div.content nav:last-child ul li {
+    margin: 0px 0px 0px 20px;
+}
+header div.content nav:last-child ul li a {
+    display: block;
+    padding: 10px 40px;
+    border: 2px solid #16133D;
+    border-radius: 8px;
+}
+header div.content nav:last-child ul li a:hover {
+    border: 2px solid #2b285f;
+}
+header div.content nav:last-child ul li:last-child a {
+    background: #16133D;
+    color: white;
+}
+header div.content nav:last-child ul li:last-child a:hover {
+    background: #2b285f;
+}
+
+
+
+
