@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    /* Define o tamanho de fonte padrão: */
+    /* Define o tamanho de fonte padrão: 16px*/
     font-size: 1.6rem;
 }
 
@@ -28,69 +28,121 @@ header, main, footer {
 /*  ------------------------
             CABEÇALHO
     ------------------------ */
-header div.content {
+header section.content {
     display: flex;
     justify-content: space-between;
     padding: 38px 0px 38px 0px;
 
     border-bottom: 1px solid #EFEEF3;
 }
-header div.content a {
+header section.content a {
     color: #16133D;
 }
 
 /* LOGO */
 .logo a{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 500;
+    font: 500 35px 'Quicksand', sans-serif;
 }
 .logo img {
     margin: 0px 10px 0px 0px;
 }
 
-header div.content nav {
+/* NAV site */
+header section.content nav {
     display: flex;
     height: 100%;
     align-items: center;
 }
-header div.content nav ul {
+header section.content nav ul {
     display: flex;
 }
-header div.content nav ul li {
+header section.content nav ul li {
     margin: 0px 0px 0px 50px;
 }
-header div.content nav ul li:first-child {
+header section.content nav ul li:first-child {
     margin: 0px 0px 0px 0px;
 }
-header div.content nav ul li a {
+header section.content nav ul li a {
     font-weight: 500;
 }
-header div.content nav ul li a:hover {
+header section.content nav ul li a:hover {
     color: #2b285f;
 }
 
 /* NAV Registro/Login */
-header div.content nav:last-child ul li {
+header section.content nav:last-child ul li {
     margin: 0px 0px 0px 20px;
 }
-header div.content nav:last-child ul li a {
+header section.content nav:last-child ul li a {
     display: block;
     padding: 10px 40px;
     border: 2px solid #16133D;
     border-radius: 8px;
 }
-header div.content nav:last-child ul li a:hover {
+header section.content nav:last-child ul li a:hover {
     border: 2px solid #2b285f;
 }
-header div.content nav:last-child ul li:last-child a {
+header section.content nav:last-child ul li:last-child a {
     background: #16133D;
     color: white;
 }
-header div.content nav:last-child ul li:last-child a:hover {
+header section.content nav:last-child ul li:last-child a:hover {
     background: #2b285f;
 }
 
+/*  ------------------------
+            BANNER
+    ------------------------ */
+main section.banner {
+    margin: 60px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr minmax(575px, 1fr);
 
+}
+/* Texto */
+main section.banner div.text-banner {
+    padding: 0 100px 0 0;
+    color: #16133D;
+}
+main section.banner div.text-banner h2 {
+    font: 600 56px/68px 'Nunito Sans', sans-serif;
+}
+main section.banner div.text-banner p {
+    color: #183B56;
+    font: 19px/36px 'Roboto', sans-serif;
+}
 
+/* Botões */
+main section.banner div.text-banner a {
+    display: inline-block;
+    width: 180px;
+    padding: 14px 0px 14px 0px;
+    margin: 20px 0px 0px 0px;
+    
+    text-align: center;
+
+    background: #007FFC;
+    border: 2px solid #007FFC;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+main section.banner div.text-banner a:last-child {
+    background: #FFFFFF;
+    color: #007FFC;
+    margin: 0px 0px 0px 15px;
+}
+main section.banner div.text-banner a:hover {
+    border: 2px solid #4fa4fa;
+    background: #4fa4fa;
+}
+main section.banner div.text-banner a:last-child:hover {
+    background: #FFFFFF;
+    color: #4fa4fa;
+}
+
+/* Imagem */
+main section.banner div.img-banner img {
+    width: 100%;
+    border-radius: 8px;
+}
 
