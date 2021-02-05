@@ -15,7 +15,9 @@ body {
     ------------------------ */
 header, main, footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 
 .content {
@@ -146,3 +148,96 @@ main section.banner div.img-banner img {
     border-radius: 8px;
 }
 
+/*  ------------------------
+        DEFAULT SECTIONS
+    ------------------------ */
+main section.default-section {
+    margin: 60px 0px 60px 0px;
+}
+
+main section.default-section h2 {
+    font: 600 40px/52px "Nunito Sans", sans-serif;
+    color: #16133D;
+    margin: 17px 0px 0px 0px;
+}
+
+main section.default-section > p {
+    font: 400 18px/28px 'Roboto', sans-serif;
+    color: #7690A8;
+}
+
+main section.default-section p:first-child {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+main section.default-section ul {
+    display: grid;
+    grid-auto-flow: column;
+
+    margin: 60px 0px 0px 0px;
+}
+
+/*  ------------------------
+        OUR SERVICES
+    ------------------------ */
+main section.default-section ul.services li {
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+
+    padding: 45px;
+}
+
+main section.default-section ul.services li:nth-child(2) {
+    margin: 0px 39px;
+}
+
+main section.default-section ul.services li h3 {
+    font: 400 24px/21px 'Roboto', sans-serif;
+    color: #16133D;
+
+    margin: 42px 0px 0px 0px;
+}
+    
+
+main section.default-section ul.services li p {
+    font: 400 16px/28px'Roboto', sans-serif;
+    color: #16133D;
+    
+    padding: 14px 0px 29px 0px;
+}
+
+main section.default-section ul.services li a {
+    font: 400 16px/18px'Roboto', sans-serif;
+    color: #16133D;
+}
+
+/*  ------------------------
+        OUR SERVICES
+    ------------------------ */
+main section.default-section ul.features li {
+    border-radius: 8px;
+    overflow: hidden;
+
+    padding: 50px;
+    height: 350px;
+
+    display: flex;
+    align-items: flex-end;
+}
+main section.default-section ul.features li:first-child {
+    margin: 0px 50px 0px 0px;
+}
+
+main section.default-section ul.features li a {
+    font: 400 36px/48px 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+main section.default-section ul.features li:first-child {
+    background: url(../img/feature-tablet.png) no-repeat;
+}
+
+main section.default-section ul.features li:last-child {
+    background: url(../img/feature-vr.png) no-repeat;
+}
